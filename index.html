@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akanksha Digital Solutions - Business Solutions for Modern Needs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #6366f1 !important;
+            text-decoration: none;
+        }
+
+        .nav-link {
+            color: #374151 !important;
+            font-weight: 500;
+            margin: 0 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: #6366f1 !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #6366f1;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        #hero_section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 100px 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            color: white;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .countdown-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        #aboutUs {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #6366f1;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #6b7280;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #6366f1;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        #service {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.3);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        #Portfolio {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+
+        .portfolio-filters {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            background: white;
+            border: 2px solid #e5e7eb;
+            color: #6b7280;
+            padding: 10px 25px;
+            margin: 0 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #6366f1;
+            color: white;
+            border-color: #6366f1;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .portfolio-info {
+            padding: 1.5rem;
+        }
+
+        .portfolio-info h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .portfolio-info p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        #clients {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .client-logo {
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .client-logo:hover {
+            background: #6366f1;
+            color: white;
+        }
+
+        #team {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .team-info {
+            padding: 1.5rem;
+        }
+
+        .team-info h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .team-info p {
+            color: #6366f1;
+            font-weight: 500;
+        }
+
+        #contact {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #fbbf24;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 15px;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #fbbf24;
+            box-shadow: 0 0 0 0.2rem rgba(251, 191, 36, 0.25);
+            color: white;
+        }
+
+        .form-control:valid {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            color: #1f2937;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.4);
+        }
+
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 0;
+            opacity: 0.8;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #6366f1;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem 0;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .navbar-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+
+            .navbar-nav.active {
+                display: flex;
+            }
+
+            .nav-link {
+                margin: 0.5rem 1rem;
+            }
+
+            .hero-content,
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .countdown {
+                gap: 1rem;
+            }
+
+            .countdown-item {
+                min-width: 60px;
+                padding: 0.5rem;
+            }
+
+            .countdown-number {
+                font-size: 1.5rem;
+            }
+
+            .portfolio-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .toast {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: translateX(400px);
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#hero_section" class="navbar-brand">AKANKSHA Digital Solutions</a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-nav" id="navbarNav">
+                <a href="#hero_section" class="nav-link active">Home</a>
+                <a href="#aboutUs" class="nav-link">About Us</a>
+                <a href="#service" class="nav-link">Services</a>
+                <a href="#Portfolio" class="nav-link">Portfolio</a>
+                <a href="#clients" class="nav-link">Clients</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero_section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="countdown-container">
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">177</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">19</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">41</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">2</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                <h1>Welcome to Akanksha Digital Solutions!</h1>
+                <p>Your trusted partner in delivering innovative, cloud-based solutions tailored to your business needs. From call center management to project coordination, we empower businesses with seamless, scalable technology.</p>
+                <a href="#service" class="cta-button">Read more</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://picsum.photos/seed/hero/600/400.jpg" alt="Digital Solutions">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="aboutUs">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>Who We Are</h3>
+                    <p>Akanksha Digital Solutions is a startup dedicated to providing cutting-edge, cloud-based solutions for modern businesses. With a focus on reliability, innovation, and user-friendly interfaces, we empower organizations to achieve their goals with confidence.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To simplify business processes and maximize productivity through advanced software solutions tailored to our clients' needs.</p>
+                    
+                    <h3>Why Choose Us?</h3>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="https://picsum.photos/seed/about/500/400.jpg" alt="About Us">
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4>Expertise in cloud technology</h4>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h4>Customizable and scalable solutions</h4>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Dedicated support team</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="service">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Center Solutions</h3>
+                    <p>Manage customer interactions with ease using our efficient and intuitive call center tools.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Ticketing Systems</h3>
+                    <p>Streamline issue tracking and resolution with a powerful and customizable ticketing platform.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Project Management Tools</h3>
+                    <p>Plan, organize, and execute projects seamlessly with our all-in-one project manager.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>HRM Solutions</h3>
+                    <p>Simplify HR operations with tools for employee management, payroll, and performance tracking.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3>Android App Development</h3>
+                    <p>Build fast, secure, and user-friendly Android applications tailored to your business needs.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3>iOS App Development</h3>
+                    <p>Deliver premium experiences with our customized iOS applications for business objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="Portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="prototype">Prototype</button>
+                <button class="filter-btn" data-filter="call-center">Call Center Solutions</button>
+                <button class="filter-btn" data-filter="ticketing">Ticketing Systems</button>
+                <button class="filter-btn" data-filter="project-management">Project Management Tools</button>
+                <button class="filter-btn" data-filter="hrm">HRM Processes</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in" data-category="call-center">
+                    <img src="https://picsum.photos/seed/portfolio1/400/250.jpg" alt="Portfolio 1">
+                    <div class="portfolio-info">
+                        <h4>Call Center Solutions</h4>
+                        <p>Customer interaction management system</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="call-center">
+                    <img src="https://picsum.photos/seed/portfolio2/400/250.jpg" alt="Portfolio 2">
+                    <div class="portfolio-info">
+                        <h4>Call Center Solutions</h4>
+                        <p>Advanced customer support platform</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="ticketing">
+                    <img src="https://picsum.photos/seed/portfolio3/400/250.jpg" alt="Portfolio 3">
+                    <div class="portfolio-info">
+                        <h4>Ticketing Solution</h4>
+                        <p>Issue tracking and management system</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="ticketing">
+                    <img src="https://picsum.photos/seed/portfolio4/400/250.jpg" alt="Portfolio 4">
+                    <div class="portfolio-info">
+                        <h4>Ticketing Systems</h4>
+                        <p>Comprehensive support ticket platform</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="project-management">
+                    <img src="https://picsum.photos/seed/portfolio5/400/250.jpg" alt="Portfolio 5">
+                    <div class="portfolio-info">
+                        <h4>Project Management</h4>
+                        <p>Task and team coordination system</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="project-management">
+                    <img src="https://picsum.photos/seed/portfolio6/400/250.jpg" alt="Portfolio 6">
+                    <div class="portfolio-info">
+                        <h4>Project Management Tools</h4>
+                        <p>End-to-end project execution platform</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="hrm">
+                    <img src="https://picsum.photos/seed/portfolio7/400/250.jpg" alt="Portfolio 7">
+                    <div class="portfolio-info">
+                        <h4>HRM Solutions</h4>
+                        <p>Human resource management system</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="hrm">
+                    <img src="https://picsum.photos/seed/portfolio8/400/250.jpg" alt="Portfolio 8">
+                    <div class="portfolio-info">
+                        <h4>Human Resource Management</h4>
+                        <p>Complete HR workflow automation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients">
+        <div class="container">
+            <h2 class="section-title">Our Clients</h2>
+            <div class="clients-grid">
+                <div class="client-logo fade-in">
+                    <i class="fas fa-building fa-3x"></i>
+                    <p>Enterprise Corp</p>
+                </div>
+                <div class="client-logo fade-in">
+                    <i class="fas fa-industry fa-3x"></i>
+                    <p>Tech Solutions</p>
+                </div>
+                <div class="client-logo fade-in">
+                    <i class="fas fa-globe fa-3x"></i>
+                    <p>Global Systems</p>
+                </div>
+                <div class="client-logo fade-in">
+                    <i class="fas fa-mobile-alt fa-3x"></i>
+                    <p>Mobile Innovations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <img src="https://picsum.photos/seed/team1/300/300.jpg" alt="Team Member 1">
+                    <div class="team-info">
+                        <h4>Sravanthi</h4>
+                        <p>Founder</p>
+                    </div>
+                </div>
+                <div class="team-member fade-in">
+                    <img src="https://picsum.photos/seed/team2/300/300.jpg" alt="Team Member 2">
+                    <div class="team-info">
+                        <h4>Rajesh</h4>
+                        <p>Technical Lead</p>
+                    </div>
+                </div>
+                <div class="team-member fade-in">
+                    <img src="https://picsum.photos/seed/team3/300/300.jpg" alt="Team Member 3">
+                    <div class="team-info">
+                        <h4>Priya</h4>
+                        <p>UX Designer</p>
+                    </div>
+                </div>
+                <div class="team-member fade-in">
+                    <img src="https://picsum.photos/seed/team4/300/300.jpg" alt="Team Member 4">
+                    <div class="team-info">
+                        <h4>Amit</h4>
+                        <p>Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Akanksha Digital Solutions</h3>
+                    <p>Hyderabad, Telangana, India</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>+91 123 456 7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span>info@akankshadigitalsolutions.in</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>Hyderabad, India</span>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message *" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024, Powered by Akanksha Digital Solutions.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i> Message sent successfully!
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navbarNav = document.getElementById('navbarNav');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navbarNav.classList.toggle('active');
+            const icon = mobileMenuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navbarNav.classList.remove('active');
+                    const icon = mobileMenuToggle.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+        });
+
+        // Active navigation highlight
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Countdown timer
+        function updateCountdown() {
+            // Set target date (6 months from now)
+            const targetDate = new Date();
+            targetDate.setMonth(targetDate.getMonth() + 6);
+            
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Portfolio filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success toast
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+            
+            // Reset form
+            this.reset();
+            
+            // Hide toast after 3 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        });
+
+        // Service cards interaction
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('h3').textContent;
+                console.log(`Service clicked: ${title}`);
+            });
+        });
+
+        // Portfolio items interaction
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const title = this.querySelector('h4').textContent;
+                console.log(`Portfolio item clicked: ${title}`);
+            });
+        });
+
+        // Team member interaction
+        document.querySelectorAll('.team-member').forEach(member => {
+            member.addEventListener('click', function() {
+                const name = this.querySelector('h4').textContent;
+                const role = this.querySelector('p').textContent;
+                console.log(`Team member clicked: ${name} - ${role}`);
+            });
+        });
+    </script>
+</body>
+</html>
