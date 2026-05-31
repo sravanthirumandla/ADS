@@ -35,52 +35,52 @@
 
   <!-- Person 1 (left) - standing with tablet -->
   <g transform="translate(100, 160)" filter="url(#s2)">
-    <path d="M-18 65 Q-20 95 -12 125 L12 125 Q20 95 18 65 Z" fill="url(#b1)" opacity="0.85"/>
-    <rect x="-5" y="-4" width="10" height="12" rx="3" fill="url(#skin2)"/>
+    <path d="M-18 8 Q-20 38 -12 68 L12 68 Q20 38 18 8 Z" fill="url(#b1)" opacity="0.85"/>
+    <rect x="-5" y="-3" width="10" height="12" rx="3" fill="url(#skin2)"/>
     <ellipse cx="0" cy="-18" rx="20" ry="22" fill="url(#skin2)"/>
     <path d="M-20 -18 Q-22 -40 0 -44 Q22 -40 20 -18 Q18 -28 0 -30 Q-18 -28 -20 -18Z" fill="#1f2937"/>
     <ellipse cx="-6" cy="-18" rx="2" ry="2.5" fill="#1f2937" opacity="0.7"/>
     <ellipse cx="6" cy="-18" rx="2" ry="2.5" fill="#1f2937" opacity="0.7"/>
     <path d="M-4 -11 Q0 -8 4 -11" fill="none" stroke="#1f2937" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
     <!-- Tablet in hand -->
-    <path d="M-18 70 Q-30 80 -28 100" fill="none" stroke="url(#b1)" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
-    <rect x="-38" y="80" width="26" height="38" rx="3" fill="#1f2937"/>
-    <rect x="-36" y="83" width="22" height="32" rx="2" fill="#312e81"/>
-    <rect x="-34" y="87" width="18" height="10" rx="1" fill="rgba(99,102,241,0.4)"/>
-    <rect x="-34" y="100" width="14" height="2" rx="1" fill="rgba(251,191,36,0.4)"/>
+    <path d="M-18 28 Q-30 55 -28 80" fill="none" stroke="url(#b1)" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <rect x="-38" y="60" width="26" height="38" rx="3" fill="#1f2937"/>
+    <rect x="-36" y="63" width="22" height="32" rx="2" fill="#312e81"/>
+    <rect x="-34" y="67" width="18" height="10" rx="1" fill="rgba(99,102,241,0.4)"/>
+    <rect x="-34" y="80" width="14" height="2" rx="1" fill="rgba(251,191,36,0.4)"/>
   </g>
 
   <!-- Person 2 (center) - holding laptop -->
   <g transform="translate(250, 150)" filter="url(#s2)">
-    <path d="M-20 72 Q-22 105 -14 135 L14 135 Q22 105 20 72 Z" fill="url(#b2)" opacity="0.85"/>
-    <rect x="-5" y="-4" width="10" height="12" rx="3" fill="url(#skin2)"/>
+    <path d="M-20 8 Q-22 40 -14 72 L14 72 Q22 40 20 8 Z" fill="url(#b2)" opacity="0.85"/>
+    <rect x="-5" y="-3" width="10" height="12" rx="3" fill="url(#skin2)"/>
     <ellipse cx="0" cy="-20" rx="22" ry="24" fill="url(#skin2)"/>
     <path d="M-22 -20 Q-24 -44 0 -48 Q24 -44 22 -20 Q20 -32 0 -34 Q-20 -32 -22 -20Z" fill="#374151"/>
     <ellipse cx="-7" cy="-20" rx="2" ry="2.5" fill="#1f2937" opacity="0.7"/>
     <ellipse cx="7" cy="-20" rx="2" ry="2.5" fill="#1f2937" opacity="0.7"/>
     <path d="M-5 -13 Q0 -9 5 -13" fill="none" stroke="#1f2937" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
     <!-- Laptop -->
-    <path d="M20 78 Q40 100 30 130" fill="none" stroke="url(#b2)" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
-    <path d="M20 78 Q10 95 15 120" fill="none" stroke="url(#b2)" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
-    <path d="M8 70 L48 70 L48 90 L8 90Z" fill="#1f2937"/>
-    <path d="M10 72 L46 72 L46 88 L10 88Z" fill="url(#b1)"/>
-    <rect x="12" y="75" width="10" height="2" rx="1" fill="rgba(255,255,255,0.2)"/>
-    <rect x="12" y="79" width="8" height="2" rx="1" fill="rgba(255,255,255,0.2)"/>
-    <rect x="5" y="90" width="46" height="4" rx="1" fill="#374151"/>
+    <path d="M20 28 Q38 65 28 100" fill="none" stroke="url(#b2)" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <path d="M20 28 Q12 60 15 95" fill="none" stroke="url(#b2)" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+    <path d="M8 50 L48 50 L48 72 L8 72Z" fill="#1f2937"/>
+    <path d="M10 52 L46 52 L46 70 L10 70Z" fill="url(#b1)"/>
+    <rect x="12" y="56" width="10" height="2" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="12" y="60" width="8" height="2" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="5" y="72" width="46" height="4" rx="1" fill="#374151"/>
   </g>
 
   <!-- Person 3 (right) - pointing at presentation -->
   <g transform="translate(390, 170)" filter="url(#s2)">
-    <path d="M-16 58 Q-18 88 -10 115 L10 115 Q18 88 16 58 Z" fill="url(#b3)" opacity="0.85"/>
-    <rect x="-4" y="-3" width="8" height="10" rx="3" fill="url(#skin2)"/>
+    <path d="M-16 8 Q-18 36 -10 62 L10 62 Q18 36 16 8 Z" fill="url(#b3)" opacity="0.85"/>
+    <rect x="-4" y="-2" width="8" height="11" rx="3" fill="url(#skin2)"/>
     <ellipse cx="0" cy="-16" rx="18" ry="20" fill="url(#skin2)"/>
     <path d="M-18 -16 Q-20 -38 0 -42 Q20 -38 18 -16 Q16 -26 0 -28 Q-16 -26 -18 -16Z" fill="#1f2937"/>
     <ellipse cx="-5" cy="-16" rx="2" ry="2.5" fill="#1f2937" opacity="0.7"/>
     <ellipse cx="5" cy="-16" rx="2" ry="2.5" fill="#1f2937" opacity="0.7"/>
     <path d="M-3 -10 Q0 -7 3 -10" fill="none" stroke="#1f2937" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
     <!-- Pointing arm -->
-    <path d="M16 62 Q40 55 55 40" fill="none" stroke="url(#b3)" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
-    <circle cx="55" cy="40" r="6" fill="url(#skin2)"/>
+    <path d="M16 26 Q38 40 55 34" fill="none" stroke="url(#b3)" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="55" cy="34" r="6" fill="url(#skin2)"/>
   </g>
 
   <!-- Presentation chart / board -->

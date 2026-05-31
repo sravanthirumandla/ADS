@@ -54,7 +54,7 @@
   </g>
   <!-- Project manager at bottom -->
   <g transform="translate(55, 175)">
-    <path d="M-10 30 Q-12 45 -7 58 L7 58 Q12 45 10 30Z" fill="url(#p2g)" opacity="0.8"/>
+    <path d="M-10 8 Q-12 20 -7 35 L7 35 Q12 20 10 8 Z" fill="url(#p2g)" opacity="0.8"/>
     <ellipse cx="0" cy="-8" rx="11" ry="12" fill="url(#p2sk)"/>
     <path d="M-11 -8 Q-13 -20 0 -24 Q13 -20 11 -8 Q9 -14 0 -16 Q-9 -14 -11 -8Z" fill="#374151"/>
     <ellipse cx="-3" cy="-8" rx="1" ry="1.5" fill="#1f2937" opacity="0.6"/>

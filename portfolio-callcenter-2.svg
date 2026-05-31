@@ -37,8 +37,8 @@
   </g>
   <!-- Person at desk -->
   <g transform="translate(70, 110)">
-    <path d="M-12 45 Q-14 65 -8 82 L8 82 Q14 65 12 45Z" fill="url(#c2g)" opacity="0.8"/>
-    <rect x="-3" y="-2" width="6" height="8" rx="2" fill="url(#c2sk)"/>
+    <path d="M-12 8 Q-14 30 -8 50 L8 50 Q14 30 12 8 Z" fill="url(#c2g)" opacity="0.8"/>
+    <rect x="-3" y="-1" width="6" height="10" rx="2" fill="url(#c2sk)"/>
     <ellipse cx="0" cy="-12" rx="14" ry="16" fill="url(#c2sk)"/>
     <path d="M-14 -12 Q-16 -28 0 -32 Q16 -28 14 -12 Q12 -20 0 -22 Q-12 -20 -14 -12Z" fill="#374151"/>
     <ellipse cx="-4" cy="-12" rx="1.5" ry="2" fill="#1f2937" opacity="0.6"/>

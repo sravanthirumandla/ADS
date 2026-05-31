@@ -55,7 +55,7 @@
   </g>
   <!-- Team member -->
   <g transform="translate(95, 175)">
-    <path d="M-10 35 Q-12 50 -7 65 L7 65 Q12 50 10 35Z" fill="url(#p1g)" opacity="0.8"/>
+    <path d="M-10 8 Q-12 22 -7 38 L7 38 Q12 22 10 8 Z" fill="url(#p1g)" opacity="0.8"/>
     <ellipse cx="0" cy="-10" rx="12" ry="13" fill="url(#p1sk)"/>
     <path d="M-12 -10 Q-14 -22 0 -26 Q14 -22 12 -10 Q10 -16 0 -18 Q-10 -16 -12 -10Z" fill="#374151"/>
     <ellipse cx="-3" cy="-10" rx="1" ry="1.5" fill="#1f2937" opacity="0.6"/>
