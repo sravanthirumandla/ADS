@@ -1,23 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
   <defs>
-    <linearGradient id="pbg1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="c2bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fefce8"/>
       <stop offset="100%" stop-color="#fffbeb"/>
     </linearGradient>
-    <linearGradient id="pg1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="c2g" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fbbf24"/>
       <stop offset="100%" stop-color="#f59e0b"/>
     </linearGradient>
+    <linearGradient id="c2sk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecaca"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
   </defs>
-  <rect width="400" height="250" fill="url(#pbg1)" rx="12"/>
-  <circle cx="200" cy="100" r="70" fill="white" opacity="0.8"/>
-  <g transform="translate(200, 100)">
-    <path d="M-40 -20 A40 40 0 0 1 40 -20" fill="none" stroke="url(#pg1)" stroke-width="5" stroke-linecap="round" opacity="0.15"/>
-    <path d="M-32 -16 A32 32 0 0 1 32 -16" fill="none" stroke="url(#pg1)" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
-    <path d="M-25 -12 A25 25 0 0 1 25 -12" fill="none" stroke="url(#pg1)" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
-    <circle cx="-10" cy="5" r="6" fill="url(#pg1)" opacity="0.6"/>
-    <circle cx="10" cy="5" r="6" fill="url(#pg1)" opacity="0.6"/>
-    <rect x="-18" y="18" width="36" height="5" rx="2.5" fill="url(#pg1)" opacity="0.3"/>
+  <rect width="400" height="250" fill="url(#c2bg)" rx="12"/>
+  <!-- Background - call center room -->
+  <rect x="30" y="40" width="340" height="170" rx="8" fill="white" opacity="0.5"/>
+  <line x1="40" y1="100" x2="360" y2="100" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="40" y1="150" x2="360" y2="150" stroke="#e5e7eb" stroke-width="1"/>
+  <!-- Desk -->
+  <rect x="40" y="180" width="320" height="10" rx="3" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <!-- Multiple monitors (call center setup) -->
+  <g transform="translate(130, 120)">
+    <rect x="0" y="0" width="50" height="35" rx="3" fill="#1f2937"/>
+    <rect x="2" y="2" width="46" height="31" rx="2" fill="#312e81"/>
+    <rect x="5" y="5" width="16" height="10" rx="1" fill="rgba(99,102,241,0.4)"/>
+    <rect x="5" y="18" width="24" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+    <rect x="23" y="5" width="20" height="10" rx="1" fill="rgba(16,185,129,0.4)"/>
   </g>
-  <text x="200" y="195" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#d97706" text-anchor="middle">Call Center Solutions</text>
+  <g transform="translate(200, 118)">
+    <rect x="0" y="0" width="50" height="35" rx="3" fill="#1f2937"/>
+    <rect x="2" y="2" width="46" height="31" rx="2" fill="#312e81"/>
+    <rect x="5" y="5" width="14" height="10" rx="1" fill="rgba(251,191,36,0.4)"/>
+    <rect x="5" y="18" width="20" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+    <rect x="22" y="5" width="22" height="10" rx="1" fill="rgba(239,68,68,0.4)"/>
+  </g>
+  <!-- Person at desk -->
+  <g transform="translate(70, 110)">
+    <path d="M-12 45 Q-14 65 -8 82 L8 82 Q14 65 12 45Z" fill="url(#c2g)" opacity="0.8"/>
+    <rect x="-3" y="-2" width="6" height="8" rx="2" fill="url(#c2sk)"/>
+    <ellipse cx="0" cy="-12" rx="14" ry="16" fill="url(#c2sk)"/>
+    <path d="M-14 -12 Q-16 -28 0 -32 Q16 -28 14 -12 Q12 -20 0 -22 Q-12 -20 -14 -12Z" fill="#374151"/>
+    <ellipse cx="-4" cy="-12" rx="1.5" ry="2" fill="#1f2937" opacity="0.6"/>
+    <ellipse cx="4" cy="-12" rx="1.5" ry="2" fill="#1f2937" opacity="0.6"/>
+    <path d="M-14 -14 Q-18 -16 -18 -10 L-18 0" fill="none" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M14 -14 Q18 -16 18 -10 L18 0" fill="none" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="0" cy="4" rx="10" ry="3" fill="none" stroke="#374151" stroke-width="2.5"/>
+  </g>
+  <!-- Phone -->
+  <g transform="translate(300, 170)">
+    <rect x="0" y="0" width="20" height="30" rx="3" fill="#1f2937"/>
+    <rect x="2" y="3" width="16" height="24" rx="2" fill="#312e81"/>
+    <circle cx="10" cy="5" r="1.5" fill="#374151"/>
+  </g>
 </svg>

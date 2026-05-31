@@ -1,24 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
   <defs>
-    <linearGradient id="pbg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="c1bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#eef2ff"/>
-      <stop offset="100%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#f5f3ff"/>
     </linearGradient>
-    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="c1g" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#6366f1"/>
       <stop offset="100%" stop-color="#764ba2"/>
     </linearGradient>
+    <linearGradient id="c1sk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecaca"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
   </defs>
-  <rect width="400" height="250" fill="url(#pbg)" rx="12"/>
-  <circle cx="200" cy="100" r="70" fill="white" opacity="0.8"/>
-  <g transform="translate(200, 100)">
-    <path d="M-30 -20 L-30 -10 Q-30 0 -20 0 L-10 0 Q0 0 0 -10 L0 -20 Q0 -30 -10 -30 L-20 -30 Q-30 -30 -30 -20Z" fill="url(#pg)" opacity="0.15"/>
-    <path d="M-20 -15 L-20 -8 Q-20 -2 -14 -2 L-8 -2 Q-2 -2 -2 -8 L-2 -15 Q-2 -21 -8 -21 L-14 -21 Q-20 -21 -20 -15Z" fill="url(#pg)" opacity="0.3"/>
-    <ellipse cx="0" cy="-35" rx="25" ry="8" fill="url(#pg)" opacity="0.08"/>
-    <path d="M-25 5 C-25 15 -15 25 0 25 C15 25 25 15 25 5" fill="none" stroke="url(#pg)" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
-    <circle cx="-8" cy="0" r="4" fill="url(#pg)" opacity="0.6"/>
-    <circle cx="8" cy="0" r="4" fill="url(#pg)" opacity="0.6"/>
-    <rect x="-12" y="12" width="24" height="6" rx="3" fill="url(#pg)" opacity="0.3"/>
+  <rect width="400" height="250" fill="url(#c1bg)" rx="12"/>
+  <!-- Desk -->
+  <rect x="20" y="190" width="360" height="8" rx="2" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <!-- Person -->
+  <g transform="translate(100, 115)">
+    <path d="M-14 50 Q-16 72 -10 92 L10 92 Q16 72 14 50Z" fill="url(#c1g)" opacity="0.8"/>
+    <rect x="-4" y="-3" width="8" height="10" rx="2" fill="url(#c1sk)"/>
+    <ellipse cx="0" cy="-14" rx="16" ry="18" fill="url(#c1sk)"/>
+    <path d="M-16 -14 Q-18 -32 0 -36 Q18 -32 16 -14 Q14 -22 0 -24 Q-14 -22 -16 -14Z" fill="#374151"/>
+    <ellipse cx="-5" cy="-14" rx="1.5" ry="2" fill="#1f2937" opacity="0.6"/>
+    <ellipse cx="5" cy="-14" rx="1.5" ry="2" fill="#1f2937" opacity="0.6"/>
+    <!-- Headset -->
+    <path d="M-16 -16 Q-20 -18 -20 -10 Q-20 0 -18 5" fill="none" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <path d="M16 -16 Q20 -18 20 -10 Q20 0 18 5" fill="none" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="0" cy="6" rx="14" ry="4" fill="none" stroke="#374151" stroke-width="3"/>
+    <!-- Arm reaching to keyboard -->
+    <path d="M-14 55 Q-25 75 -18 90" fill="none" stroke="url(#c1g)" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="-18" cy="90" r="5" fill="url(#c1sk)"/>
   </g>
-  <text x="200" y="195" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#6366f1" text-anchor="middle">Call Center Solutions</text>
+  <!-- Monitor -->
+  <g transform="translate(200, 140)">
+    <rect x="25" y="45" width="6" height="10" rx="1" fill="#9ca3af"/>
+    <rect x="18" y="50" width="20" height="4" rx="2" fill="#9ca3af"/>
+    <rect x="0" y="0" width="70" height="50" rx="4" fill="#1f2937"/>
+    <rect x="3" y="3" width="64" height="44" rx="2" fill="#312e81"/>
+    <rect x="8" y="8" width="20" height="14" rx="2" fill="rgba(99,102,241,0.4)"/>
+    <rect x="32" y="8" width="12" height="14" rx="2" fill="rgba(16,185,129,0.4)"/>
+    <rect x="48" y="8" width="14" height="14" rx="2" fill="rgba(251,191,36,0.4)"/>
+    <rect x="8" y="26" width="30" height="4" rx="1" fill="rgba(255,255,255,0.1)"/>
+    <rect x="8" y="33" width="22" height="4" rx="1" fill="rgba(255,255,255,0.08)"/>
+  </g>
+  <!-- Phone headset icon on desk -->
+  <g transform="translate(310, 175)">
+    <circle cx="12" cy="8" r="14" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <path d="M2 2 Q2 -6 12 -6 Q22 -6 22 2 L22 6 Q22 10 18 10 L16 10 Q14 10 14 8 L14 4 Q14 2 12 2 Q10 2 10 4 L10 8 Q10 10 8 10 L6 10 Q2 10 2 6Z" fill="url(#c1g)" opacity="0.6"/>
+    <path d="M8 -2 Q12 -6 16 -2" fill="none" stroke="url(#c1g)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  </g>
 </svg>

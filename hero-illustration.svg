@@ -1,44 +1,166 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
   <defs>
-    <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#eef2ff"/>
-      <stop offset="100%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#f5f3ff"/>
     </linearGradient>
-    <linearGradient id="hp1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="brand1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#6366f1"/>
       <stop offset="100%" stop-color="#764ba2"/>
     </linearGradient>
-    <linearGradient id="hp2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="brand2" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fbbf24"/>
       <stop offset="100%" stop-color="#f59e0b"/>
     </linearGradient>
-    <filter id="hsh">
-      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-opacity="0.1"/>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecaca"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.1"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-opacity="0.15"/>
     </filter>
   </defs>
-  <rect width="600" height="400" rx="20" fill="url(#hbg)"/>
-  <circle cx="80" cy="70" r="140" fill="rgba(99,102,241,0.06)"/>
-  <circle cx="520" cy="340" r="160" fill="rgba(118,75,162,0.06)"/>
-  <rect x="120" y="50" width="360" height="300" rx="16" fill="white" filter="url(#hsh)"/>
-  <rect x="120" y="50" width="360" height="48" rx="16" fill="url(#hp1)"/>
-  <rect x="120" y="82" width="360" height="16" fill="url(#hp1)"/>
-  <circle cx="148" cy="74" r="5" fill="white" opacity="0.5"/>
-  <circle cx="166" cy="74" r="5" fill="white" opacity="0.5"/>
-  <circle cx="184" cy="74" r="5" fill="white" opacity="0.5"/>
-  <rect x="160" y="220" width="45" height="90" rx="8" fill="url(#hp1)" opacity="0.6"/>
-  <rect x="225" y="175" width="45" height="135" rx="8" fill="url(#hp1)"/>
-  <rect x="290" y="195" width="45" height="115" rx="8" fill="url(#hp1)" opacity="0.8"/>
-  <rect x="355" y="150" width="45" height="160" rx="8" fill="url(#hp2)"/>
-  <path d="M155 280 L200 235 L245 255 L290 210 L335 230 L380 185" fill="none" stroke="#6366f1" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
-  <circle cx="200" cy="235" r="6" fill="#6366f1"/>
-  <circle cx="290" cy="210" r="6" fill="#6366f1"/>
-  <circle cx="380" cy="185" r="6" fill="#6366f1"/>
-  <g transform="translate(320, 118)">
-    <path d="M0 20 a16 16 0 0 1 16 -16 a20 20 0 0 1 36 0 a16 16 0 0 1 16 16 z" fill="url(#hp1)" opacity="0.12"/>
-    <path d="M4 20 a14 14 0 0 1 14 -14 a18 18 0 0 1 32 0 a14 14 0 0 1 14 14 z" fill="url(#hp1)" opacity="0.25"/>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg1)"/>
+  <circle cx="80" cy="80" r="180" fill="rgba(99,102,241,0.04)"/>
+  <circle cx="520" cy="340" r="200" fill="rgba(118,75,162,0.04)"/>
+  <circle cx="300" cy="200" r="120" fill="rgba(251,191,36,0.03)"/>
+
+  <!-- Floor -->
+  <rect x="0" y="340" width="600" height="60" fill="rgba(99,102,241,0.04)"/>
+  <line x1="0" y1="340" x2="600" y2="340" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Desk -->
+  <g filter="url(#shadow2)">
+    <rect x="60" y="270" width="480" height="16" rx="4" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="80" y="286" width="16" height="54" rx="2" fill="#d1d5db"/>
+    <rect x="180" y="286" width="16" height="54" rx="2" fill="#d1d5db"/>
+    <rect x="380" y="286" width="16" height="54" rx="2" fill="#d1d5db"/>
+    <rect x="480" y="286" width="16" height="54" rx="2" fill="#d1d5db"/>
   </g>
-  <g transform="translate(140, 120)">
-    <rect x="0" y="0" width="36" height="20" rx="4" fill="#6366f1" opacity="0.15"/>
-    <circle cx="18" cy="10" r="4" fill="#6366f1" opacity="0.3"/>
+
+  <!-- Person -->
+  <g transform="translate(180, 120)">
+    <!-- Body (torso) -->
+    <path d="M-22 80 Q-25 110 -15 140 L15 140 Q25 110 22 80 Z" fill="#6366f1" opacity="0.85"/>
+    <!-- Neck -->
+    <rect x="-6" y="-5" width="12" height="15" rx="4" fill="url(#skin)"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="-22" rx="24" ry="26" fill="url(#skin)"/>
+    <!-- Hair -->
+    <path d="M-24 -22 Q-26 -48 0 -52 Q26 -48 24 -22 Q22 -32 0 -35 Q-22 -32 -24 -22Z" fill="#1f2937"/>
+    <!-- Eye -->
+    <ellipse cx="-8" cy="-22" rx="2.5" ry="3" fill="#1f2937" opacity="0.7"/>
+    <ellipse cx="8" cy="-22" rx="2.5" ry="3" fill="#1f2937" opacity="0.7"/>
+    <!-- Smile -->
+    <path d="M-6 -14 Q0 -10 6 -14" fill="none" stroke="#1f2937" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+    <!-- Left arm reaching to keyboard -->
+    <path d="M-22 85 Q-45 120 -30 155 Q-20 155 -15 150" fill="none" stroke="#6366f1" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+    <!-- Left hand -->
+    <circle cx="-15" cy="150" r="7" fill="url(#skin)"/>
+    <!-- Right arm reaching to keyboard -->
+    <path d="M22 85 Q50 120 35 155 Q25 155 20 150" fill="none" stroke="#6366f1" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+    <!-- Right hand -->
+    <circle cx="20" cy="150" r="7" fill="url(#skin)"/>
+  </g>
+
+  <!-- Chair -->
+  <g transform="translate(180, 260)">
+    <rect x="-30" y="-5" width="60" height="8" rx="4" fill="#374151" opacity="0.3"/>
+    <rect x="-25" y="3" width="8" height="30" rx="2" fill="#374151" opacity="0.2"/>
+    <rect x="17" y="3" width="8" height="30" rx="2" fill="#374151" opacity="0.2"/>
+  </g>
+
+  <!-- Large Monitor -->
+  <g transform="translate(380, 170)" filter="url(#shadow1)">
+    <!-- Stand -->
+    <rect x="65" y="90" width="10" height="16" rx="2" fill="#9ca3af"/>
+    <rect x="50" y="100" width="40" height="6" rx="3" fill="#9ca3af"/>
+    <!-- Monitor body -->
+    <rect x="0" y="0" width="140" height="95" rx="8" fill="#1f2937"/>
+    <rect x="4" y="4" width="132" height="87" rx="4" fill="url(#screen)"/>
+    <!-- Dashboard - Chart bar -->
+    <rect x="14" y="60" width="16" height="28" rx="3" fill="#6366f1" opacity="0.8"/>
+    <rect x="34" y="40" width="16" height="48" rx="3" fill="#fbbf24" opacity="0.8"/>
+    <rect x="54" y="50" width="16" height="38" rx="3" fill="#10b981" opacity="0.8"/>
+    <rect x="74" y="30" width="16" height="58" rx="3" fill="#6366f1" opacity="0.6"/>
+    <rect x="94" y="45" width="16" height="43" rx="3" fill="#ec4899" opacity="0.7"/>
+    <!-- Dashboard - Pie chart -->
+    <circle cx="60" cy="26" r="12" fill="none" stroke="#6366f1" stroke-width="4" stroke-dasharray="18 20" opacity="0.5"/>
+    <!-- Top bar -->
+    <rect x="14" y="10" width="40" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+    <circle cx="118" cy="12" r="3" fill="#ef4444" opacity="0.6"/>
+    <circle cx="126" cy="12" r="3" fill="#fbbf24" opacity="0.6"/>
+    <circle cx="134" cy="12" r="3" fill="#10b981" opacity="0.6"/>
+  </g>
+
+  <!-- Laptop -->
+  <g transform="translate(280, 230)" filter="url(#shadow1)">
+    <!-- Screen -->
+    <path d="M0 0 L80 0 L80 45 L0 45Z" fill="#1f2937"/>
+    <path d="M3 3 L77 3 L77 42 L3 42Z" fill="url(#screen)"/>
+    <!-- Screen content -->
+    <rect x="8" y="10" width="20" height="3" rx="1.5" fill="rgba(99,102,241,0.5)"/>
+    <rect x="8" y="16" width="14" height="3" rx="1.5" fill="rgba(251,191,36,0.5)"/>
+    <rect x="8" y="22" width="25" height="3" rx="1.5" fill="rgba(16,185,129,0.5)"/>
+    <!-- Lid hinge -->
+    <rect x="0" y="45" width="80" height="4" rx="1" fill="#4b5563"/>
+    <!-- Keyboard base -->
+    <rect x="-10" y="49" width="100" height="6" rx="2" fill="#374151"/>
+  </g>
+
+  <!-- Mobile phone -->
+  <g transform="translate(490, 240)" filter="url(#shadow1)">
+    <rect x="0" y="0" width="32" height="55" rx="4" fill="#1f2937"/>
+    <rect x="2" y="3" width="28" height="49" rx="2" fill="url(#screen)"/>
+    <circle cx="16" cy="5" r="2" fill="#374151"/>
+    <rect x="8" y="8" width="12" height="2" rx="1" fill="rgba(255,255,255,0.1)"/>
+    <rect x="6" y="14" width="20" height="14" rx="2" fill="rgba(99,102,241,0.3)"/>
+    <rect x="6" y="31" width="20" height="3" rx="1.5" fill="rgba(251,191,36,0.4)"/>
+    <rect x="6" y="36" width="16" height="3" rx="1.5" fill="rgba(16,185,129,0.4)"/>
+  </g>
+
+  <!-- Coffee cup -->
+  <g transform="translate(100, 248)">
+    <rect x="0" y="0" width="20" height="24" rx="3" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+    <path d="M20 4 Q28 4 28 12 Q28 20 20 20" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+    <ellipse cx="10" cy="8" rx="5" ry="3" fill="#d97706" opacity="0.4"/>
+    <path d="M3 0 L6 -4 L14 -4 L17 0" fill="#d1d5db" opacity="0.5"/>
+  </g>
+
+  <!-- Cloud -->
+  <g transform="translate(100, 50)">
+    <path d="M10 35 A15 15 0 0 1 15 10 A20 20 0 0 1 50 8 A18 18 0 0 1 55 35 Z" fill="url(#brand1)" opacity="0.12"/>
+    <path d="M14 33 A12 12 0 0 1 18 14 A16 16 0 0 1 46 12 A14 14 0 0 1 50 33 Z" fill="url(#brand1)" opacity="0.25"/>
+    <path d="M22 20 Q28 14 36 18 Q40 24 34 28 Z" fill="white" opacity="0.4"/>
+  </g>
+
+  <!-- Network nodes -->
+  <g transform="translate(420, 70)">
+    <circle cx="0" cy="0" r="6" fill="#6366f1" opacity="0.2"/>
+    <circle cx="0" cy="0" r="3" fill="#6366f1" opacity="0.5"/>
+    <circle cx="50" cy="25" r="5" fill="#fbbf24" opacity="0.2"/>
+    <circle cx="50" cy="25" r="2.5" fill="#fbbf24" opacity="0.5"/>
+    <circle cx="30" cy="50" r="4" fill="#10b981" opacity="0.2"/>
+    <circle cx="30" cy="50" r="2" fill="#10b981" opacity="0.5"/>
+    <line x1="0" y1="0" x2="50" y2="25" stroke="#6366f1" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+    <line x1="50" y1="25" x2="30" y2="50" stroke="#fbbf24" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+    <line x1="0" y1="0" x2="30" y2="50" stroke="#10b981" stroke-width="1" opacity="0.2" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Data flow dots -->
+  <g opacity="0.15">
+    <circle cx="60" cy="130" r="2" fill="#6366f1"/>
+    <circle cx="75" cy="120" r="2" fill="#6366f1"/>
+    <circle cx="90" cy="128" r="2" fill="#6366f1"/>
+    <line x1="60" y1="130" x2="90" y2="128" stroke="#6366f1" stroke-width="1"/>
   </g>
 </svg>

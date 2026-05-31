@@ -1,21 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
   <defs>
-    <linearGradient id="t4bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="abg4" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fef2f2"/>
       <stop offset="100%" stop-color="#fee2e2"/>
     </linearGradient>
-    <linearGradient id="t4g" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="ag4" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ef4444"/>
       <stop offset="100%" stop-color="#dc2626"/>
     </linearGradient>
+    <linearGradient id="ask4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecaca"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
   </defs>
-  <rect width="300" height="300" fill="url(#t4bg)"/>
-  <ellipse cx="150" cy="170" rx="70" ry="60" fill="url(#t4g)" opacity="0.1"/>
-  <circle cx="150" cy="100" r="45" fill="url(#t4g)" opacity="0.15"/>
-  <circle cx="150" cy="100" r="40" fill="url(#t4g)" opacity="0.2"/>
-  <circle cx="150" cy="88" r="16" fill="url(#t4g)" opacity="0.35"/>
-  <ellipse cx="150" cy="165" rx="55" ry="50" fill="url(#t4g)" opacity="0.12"/>
-  <path d="M115 175 Q150 160 185 175" fill="none" stroke="url(#t4g)" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
-  <circle cx="138" cy="95" r="3" fill="url(#t4g)" opacity="0.4"/>
-  <circle cx="162" cy="95" r="3" fill="url(#t4g)" opacity="0.4"/>
+  <rect width="300" height="300" fill="url(#abg4)" rx="20"/>
+  <circle cx="150" cy="140" r="110" fill="rgba(239,68,68,0.06)"/>
+  <!-- Shoulders/blazer -->
+  <path d="M80 250 Q100 200 150 195 Q200 200 220 250 Z" fill="url(#ag4)" opacity="0.15"/>
+  <path d="M90 250 Q110 205 150 200 Q190 205 210 250 Z" fill="url(#ag4)" opacity="0.2"/>
+  <path d="M135 200 L150 185 L165 200 L150 210 Z" fill="white" opacity="0.6"/>
+  <!-- Neck -->
+  <rect x="138" y="140" width="24" height="60" rx="8" fill="url(#ask4)"/>
+  <!-- Head -->
+  <ellipse cx="150" cy="115" rx="48" ry="55" fill="url(#ask4)"/>
+  <!-- Curly hair -->
+  <path d="M102 100 Q100 55 120 45 Q130 40 140 38 Q150 36 160 38 Q170 40 180 45 Q200 55 198 100 Q195 78 180 70 Q170 65 160 62 Q150 60 140 62 Q130 65 120 70 Q105 78 102 100Z" fill="#92400e"/>
+  <circle cx="115" cy="55" r="8" fill="#92400e"/>
+  <circle cx="130" cy="45" r="9" fill="#92400e"/>
+  <circle cx="148" cy="42" r="8" fill="#92400e"/>
+  <circle cx="165" cy="44" r="9" fill="#92400e"/>
+  <circle cx="180" cy="50" r="8" fill="#92400e"/>
+  <circle cx="190" cy="62" r="7" fill="#92400e"/>
+  <circle cx="108" cy="65" r="7" fill="#92400e"/>
+  <!-- Eyes -->
+  <ellipse cx="133" cy="115" rx="7" ry="8" fill="white"/>
+  <ellipse cx="167" cy="115" rx="7" ry="8" fill="white"/>
+  <ellipse cx="134" cy="116" rx="4" ry="5" fill="#1f2937" opacity="0.8"/>
+  <ellipse cx="166" cy="116" rx="4" ry="5" fill="#1f2937" opacity="0.8"/>
+  <circle cx="135" cy="114" r="1.5" fill="white"/>
+  <circle cx="167" cy="114" r="1.5" fill="white"/>
+  <!-- Eyebrows -->
+  <path d="M124 104 Q133 100 142 104" fill="none" stroke="#92400e" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M158 104 Q167 100 176 104" fill="none" stroke="#92400e" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <!-- Nose -->
+  <path d="M150 122 L147 132 Q150 134 153 132 Z" fill="#fca5a5" opacity="0.4"/>
+  <!-- Glasses -->
+  <circle cx="133" cy="114" r="12" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.4"/>
+  <circle cx="167" cy="114" r="12" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.4"/>
+  <line x1="145" y1="114" x2="155" y2="114" stroke="#6366f1" stroke-width="2" opacity="0.4"/>
+  <line x1="121" y1="112" x2="112" y2="108" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
+  <line x1="179" y1="112" x2="188" y2="108" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
+  <!-- Smile -->
+  <path d="M140 142 Q150 150 160 142" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
 </svg>

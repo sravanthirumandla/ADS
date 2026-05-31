@@ -1,26 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
   <defs>
-    <linearGradient id="pbg6" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="h1bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fff7ed"/>
       <stop offset="100%" stop-color="#ffedd5"/>
     </linearGradient>
-    <linearGradient id="pg6" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="h1g" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f97316"/>
       <stop offset="100%" stop-color="#ea580c"/>
     </linearGradient>
+    <linearGradient id="h1sk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecaca"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
   </defs>
-  <rect width="400" height="250" fill="url(#pbg6)" rx="12"/>
-  <circle cx="200" cy="100" r="70" fill="white" opacity="0.8"/>
-  <g transform="translate(200, 100)">
-    <circle cx="-18" cy="-12" r="18" fill="none" stroke="url(#pg6)" stroke-width="3" opacity="0.15"/>
-    <circle cx="-18" cy="-12" r="7" fill="url(#pg6)" opacity="0.3"/>
-    <circle cx="18" cy="-12" r="18" fill="none" stroke="url(#pg6)" stroke-width="3" opacity="0.15"/>
-    <circle cx="18" cy="-12" r="7" fill="url(#pg6)" opacity="0.3"/>
-    <circle cx="0" cy="18" r="18" fill="none" stroke="url(#pg6)" stroke-width="3" opacity="0.15"/>
-    <circle cx="0" cy="18" r="7" fill="url(#pg6)" opacity="0.3"/>
-    <line x1="-18" y1="-12" x2="18" y2="-12" stroke="url(#pg6)" stroke-width="2" opacity="0.2"/>
-    <line x1="-18" y1="-12" x2="0" y2="18" stroke="url(#pg6)" stroke-width="2" opacity="0.2"/>
-    <line x1="18" y1="-12" x2="0" y2="18" stroke="url(#pg6)" stroke-width="2" opacity="0.2"/>
+  <rect width="400" height="250" fill="url(#h1bg)" rx="12"/>
+  <!-- Org chart structure -->
+  <g transform="translate(40, 30)">
+    <!-- Top node (CEO) -->
+    <rect x="120" y="0" width="80" height="30" rx="6" fill="white" stroke="#f97316" stroke-width="1.5"/>
+    <circle cx="130" cy="15" r="7" fill="#f97316" opacity="0.15"/>
+    <circle cx="130" cy="15" r="3" fill="#f97316" opacity="0.5"/>
+    <text x="155" y="19" font-family="Arial" font-size="7" fill="#ea580c" text-anchor="middle" font-weight="600">CEO</text>
+    <!-- Lines from CEO -->
+    <line x1="160" y1="30" x2="160" y2="40" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="60" y1="40" x2="260" y2="40" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="60" y1="40" x2="60" y2="50" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="160" y1="40" x2="160" y2="50" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="260" y1="40" x2="260" y2="50" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <!-- Middle nodes -->
+    <rect x="25" y="50" width="70" height="25" rx="5" fill="white" stroke="#6366f1" stroke-width="1" opacity="0.8"/>
+    <text x="60" y="66" font-family="Arial" font-size="7" fill="#6366f1" text-anchor="middle" font-weight="600">HR</text>
+    <rect x="125" y="50" width="70" height="25" rx="5" fill="white" stroke="#6366f1" stroke-width="1" opacity="0.8"/>
+    <text x="160" y="66" font-family="Arial" font-size="7" fill="#6366f1" text-anchor="middle" font-weight="600">Finance</text>
+    <rect x="225" y="50" width="70" height="25" rx="5" fill="white" stroke="#6366f1" stroke-width="1" opacity="0.8"/>
+    <text x="260" y="66" font-family="Arial" font-size="7" fill="#6366f1" text-anchor="middle" font-weight="600">Engineering</text>
+    <!-- Bottom lines -->
+    <line x1="60" y1="75" x2="60" y2="85" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="35" y1="85" x2="85" y2="85" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="35" y1="85" x2="35" y2="95" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="85" y1="85" x2="85" y2="95" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="160" y1="75" x2="160" y2="95" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <line x1="260" y1="75" x2="260" y2="95" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+    <!-- Bottom nodes -->
+    <rect x="10" y="95" width="50" height="22" rx="4" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <text x="35" y="109" font-family="Arial" font-size="6" fill="#6b7280" text-anchor="middle">Recruiting</text>
+    <rect x="60" y="95" width="50" height="22" rx="4" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <text x="85" y="109" font-family="Arial" font-size="6" fill="#6b7280" text-anchor="middle">Payroll</text>
+    <rect x="135" y="95" width="50" height="22" rx="4" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <text x="160" y="109" font-family="Arial" font-size="6" fill="#6b7280" text-anchor="middle">Accounts</text>
+    <rect x="235" y="95" width="50" height="22" rx="4" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <text x="260" y="109" font-family="Arial" font-size="6" fill="#6b7280" text-anchor="middle">Frontend</text>
   </g>
-  <text x="200" y="195" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#ea580c" text-anchor="middle">HRM Solutions</text>
+  <!-- People icons -->
+  <g transform="translate(50, 175)">
+    <circle cx="0" cy="0" r="18" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <circle cx="0" cy="-4" r="7" fill="#f97316" opacity="0.3"/>
+    <circle cx="0" cy="-4" r="3" fill="#f97316" opacity="0.5"/>
+    <ellipse cx="0" cy="10" rx="10" ry="7" fill="#f97316" opacity="0.15"/>
+    <text x="28" y="4" font-family="Arial" font-size="8" fill="#6b7280">Employees</text>
+  </g>
+  <g transform="translate(260, 175)">
+    <rect x="0" y="0" width="70" height="50" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="5" y="5" width="60" height="6" rx="2" fill="#f97316" opacity="0.15"/>
+    <rect x="5" y="15" width="40" height="3" rx="1.5" fill="#d1d5db"/>
+    <rect x="5" y="22" width="50" height="3" rx="1.5" fill="#d1d5db"/>
+    <rect x="5" y="29" width="35" height="3" rx="1.5" fill="#d1d5db"/>
+    <text x="35" y="45" font-family="Arial" font-size="7" fill="#6b7280" text-anchor="middle">Reports</text>
+  </g>
 </svg>

@@ -1,25 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
   <defs>
-    <linearGradient id="pbg4" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="p1bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f0fdf4"/>
       <stop offset="100%" stop-color="#ecfdf5"/>
     </linearGradient>
-    <linearGradient id="pg4" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="p1g" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#10b981"/>
       <stop offset="100%" stop-color="#059669"/>
     </linearGradient>
+    <linearGradient id="p1sk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecaca"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
   </defs>
-  <rect width="400" height="250" fill="url(#pbg4)" rx="12"/>
-  <circle cx="200" cy="100" r="70" fill="white" opacity="0.8"/>
-  <g transform="translate(200, 100)">
-    <rect x="-32" y="-38" width="64" height="76" rx="8" fill="none" stroke="url(#pg4)" stroke-width="3" opacity="0.12"/>
-    <rect x="-26" y="-32" width="52" height="64" rx="6" fill="white" opacity="0.5"/>
-    <rect x="-26" y="-32" width="52" height="14" rx="6" fill="url(#pg4)" opacity="0.15"/>
-    <rect x="-22" y="-14" width="20" height="4" rx="2" fill="url(#pg4)" opacity="0.3"/>
-    <rect x="-22" y="-6" width="30" height="4" rx="2" fill="url(#pg4)" opacity="0.2"/>
-    <rect x="-22" y="2" width="15" height="4" rx="2" fill="url(#pg4)" opacity="0.3"/>
-    <rect x="6" y="-14" width="16" height="4" rx="2" fill="url(#pg4)" opacity="0.2"/>
-    <rect x="6" y="-6" width="16" height="4" rx="2" fill="url(#pg4)" opacity="0.3"/>
+  <rect width="400" height="250" fill="url(#p1bg)" rx="12"/>
+  <!-- Kanban board background -->
+  <rect x="25" y="30" width="350" height="180" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <!-- Board columns -->
+  <g transform="translate(35, 55)">
+    <rect x="0" y="0" width="100" height="145" rx="4" fill="#f9fafb"/>
+    <rect x="0" y="0" width="100" height="20" rx="4" fill="#10b981" opacity="0.12"/>
+    <text x="50" y="14" font-family="Arial" font-size="8" fill="#059669" text-anchor="middle" font-weight="600">TO DO</text>
+    <rect x="6" y="26" width="88" height="28" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <rect x="10" y="30" width="25" height="4" rx="2" fill="#6366f1" opacity="0.4"/>
+    <rect x="10" y="37" width="40" height="3" rx="1.5" fill="#d1d5db"/>
+    <rect x="10" y="43" width="30" height="3" rx="1.5" fill="#d1d5db"/>
+    <rect x="6" y="59" width="88" height="28" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <rect x="10" y="63" width="20" height="4" rx="2" fill="#ec4899" opacity="0.4"/>
+    <rect x="10" y="70" width="35" height="3" rx="1.5" fill="#d1d5db"/>
   </g>
-  <text x="200" y="195" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#059669" text-anchor="middle">Project Management</text>
+  <g transform="translate(150, 55)">
+    <rect x="0" y="0" width="100" height="145" rx="4" fill="#f9fafb"/>
+    <rect x="0" y="0" width="100" height="20" rx="4" fill="#fbbf24" opacity="0.12"/>
+    <text x="50" y="14" font-family="Arial" font-size="8" fill="#d97706" text-anchor="middle" font-weight="600">DOING</text>
+    <rect x="6" y="26" width="88" height="28" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <rect x="10" y="30" width="30" height="4" rx="2" fill="#10b981" opacity="0.4"/>
+    <rect x="10" y="37" width="45" height="3" rx="1.5" fill="#d1d5db"/>
+    <rect x="6" y="59" width="88" height="28" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <rect x="10" y="63" width="22" height="4" rx="2" fill="#fbbf24" opacity="0.4"/>
+    <rect x="10" y="70" width="38" height="3" rx="1.5" fill="#d1d5db"/>
+    <circle cx="75" cy="74" r="6" fill="#6366f1" opacity="0.2"/>
+    <circle cx="75" cy="74" r="3" fill="#6366f1" opacity="0.5"/>
+  </g>
+  <g transform="translate(265, 55)">
+    <rect x="0" y="0" width="100" height="145" rx="4" fill="#f9fafb"/>
+    <rect x="0" y="0" width="100" height="20" rx="4" fill="#10b981" opacity="0.12"/>
+    <text x="50" y="14" font-family="Arial" font-size="8" fill="#059669" text-anchor="middle" font-weight="600">DONE</text>
+    <rect x="6" y="26" width="88" height="28" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <rect x="10" y="30" width="28" height="4" rx="2" fill="#10b981" opacity="0.5"/>
+    <rect x="10" y="37" width="42" height="3" rx="1.5" fill="#d1d5db"/>
+    <rect x="6" y="59" width="88" height="28" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.5"/>
+    <rect x="10" y="63" width="18" height="4" rx="2" fill="#10b981" opacity="0.5"/>
+    <rect x="10" y="70" width="32" height="3" rx="1.5" fill="#d1d5db"/>
+  </g>
+  <!-- Team member -->
+  <g transform="translate(95, 175)">
+    <path d="M-10 35 Q-12 50 -7 65 L7 65 Q12 50 10 35Z" fill="url(#p1g)" opacity="0.8"/>
+    <ellipse cx="0" cy="-10" rx="12" ry="13" fill="url(#p1sk)"/>
+    <path d="M-12 -10 Q-14 -22 0 -26 Q14 -22 12 -10 Q10 -16 0 -18 Q-10 -16 -12 -10Z" fill="#374151"/>
+    <ellipse cx="-3" cy="-10" rx="1" ry="1.5" fill="#1f2937" opacity="0.6"/>
+    <ellipse cx="3" cy="-10" rx="1" ry="1.5" fill="#1f2937" opacity="0.6"/>
+  </g>
 </svg>
