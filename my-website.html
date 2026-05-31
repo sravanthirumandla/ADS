@@ -193,46 +193,6 @@
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
-
-        .countdown-container {
-            background: rgba(255, 255, 255, 0.12);
-            border-radius: 16px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .countdown-item {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 0.75rem 1.25rem;
-            border-radius: 12px;
-            min-width: 80px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .countdown-number {
-            font-size: 2rem;
-            font-weight: 700;
-            display: block;
-            line-height: 1.2;
-        }
-
-        .countdown-label {
-            font-size: 0.8rem;
-            opacity: 0.8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
         /* Section defaults */
         section {
             padding: 100px 0;
@@ -753,20 +713,6 @@
             .hero-text p {
                 font-size: 1rem;
             }
-
-            .countdown-item {
-                min-width: 65px;
-                padding: 0.6rem 0.8rem;
-            }
-
-            .countdown-number {
-                font-size: 1.5rem;
-            }
-
-            .countdown-label {
-                font-size: 0.7rem;
-            }
-
             .features-grid {
                 grid-template-columns: 1fr;
                 gap: 1.25rem;
@@ -849,19 +795,6 @@
                 font-size: 1.8rem;
             }
 
-            .countdown {
-                gap: 0.6rem;
-            }
-
-            .countdown-item {
-                min-width: 55px;
-                padding: 0.5rem 0.6rem;
-            }
-
-            .countdown-number {
-                font-size: 1.25rem;
-            }
-
             .cta-button {
                 padding: 12px 28px;
                 font-size: 1rem;
@@ -905,26 +838,6 @@
         <div class="container">
             <div class="hero-wrapper">
                 <div class="hero-text">
-                    <div class="countdown-container">
-                        <div class="countdown" id="countdown">
-                            <div class="countdown-item">
-                                <span class="countdown-number" id="days">177</span>
-                                <span class="countdown-label">Days</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number" id="hours">19</span>
-                                <span class="countdown-label">Hours</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number" id="minutes">41</span>
-                                <span class="countdown-label">Minutes</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number" id="seconds">2</span>
-                                <span class="countdown-label">Seconds</span>
-                            </div>
-                        </div>
-                    </div>
                     <h1>Welcome to Akanksha Digital Solutions!</h1>
                     <p>Your trusted partner in delivering innovative, cloud-based solutions tailored to your business needs. From call center management to project coordination, we empower businesses with seamless, scalable technology.</p>
                     <a href="#service" class="cta-button">Read more</a>
@@ -1301,30 +1214,6 @@
                 }
             });
         });
-
-        // Countdown timer
-        function updateCountdown() {
-            const targetDate = new Date();
-            targetDate.setMonth(targetDate.getMonth() + 6);
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            if (distance < 0) return;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = days.toString().padStart(2, '0');
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-
         // Fade in animation on scroll
         const observerOptions = {
             threshold: 0.1,
