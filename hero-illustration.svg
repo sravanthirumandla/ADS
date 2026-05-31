@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="hp1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="hp2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="hsh">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" rx="20" fill="url(#hbg)"/>
+  <circle cx="80" cy="70" r="140" fill="rgba(99,102,241,0.06)"/>
+  <circle cx="520" cy="340" r="160" fill="rgba(118,75,162,0.06)"/>
+  <rect x="120" y="50" width="360" height="300" rx="16" fill="white" filter="url(#hsh)"/>
+  <rect x="120" y="50" width="360" height="48" rx="16" fill="url(#hp1)"/>
+  <rect x="120" y="82" width="360" height="16" fill="url(#hp1)"/>
+  <circle cx="148" cy="74" r="5" fill="white" opacity="0.5"/>
+  <circle cx="166" cy="74" r="5" fill="white" opacity="0.5"/>
+  <circle cx="184" cy="74" r="5" fill="white" opacity="0.5"/>
+  <rect x="160" y="220" width="45" height="90" rx="8" fill="url(#hp1)" opacity="0.6"/>
+  <rect x="225" y="175" width="45" height="135" rx="8" fill="url(#hp1)"/>
+  <rect x="290" y="195" width="45" height="115" rx="8" fill="url(#hp1)" opacity="0.8"/>
+  <rect x="355" y="150" width="45" height="160" rx="8" fill="url(#hp2)"/>
+  <path d="M155 280 L200 235 L245 255 L290 210 L335 230 L380 185" fill="none" stroke="#6366f1" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="200" cy="235" r="6" fill="#6366f1"/>
+  <circle cx="290" cy="210" r="6" fill="#6366f1"/>
+  <circle cx="380" cy="185" r="6" fill="#6366f1"/>
+  <g transform="translate(320, 118)">
+    <path d="M0 20 a16 16 0 0 1 16 -16 a20 20 0 0 1 36 0 a16 16 0 0 1 16 16 z" fill="url(#hp1)" opacity="0.12"/>
+    <path d="M4 20 a14 14 0 0 1 14 -14 a18 18 0 0 1 32 0 a14 14 0 0 1 14 14 z" fill="url(#hp1)" opacity="0.25"/>
+  </g>
+  <g transform="translate(140, 120)">
+    <rect x="0" y="0" width="36" height="20" rx="4" fill="#6366f1" opacity="0.15"/>
+    <circle cx="18" cy="10" r="4" fill="#6366f1" opacity="0.3"/>
+  </g>
+</svg>

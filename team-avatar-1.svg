@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="t1bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="t1g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#t1bg)"/>
+  <ellipse cx="150" cy="170" rx="70" ry="60" fill="url(#t1g)" opacity="0.1"/>
+  <circle cx="150" cy="100" r="45" fill="url(#t1g)" opacity="0.15"/>
+  <circle cx="150" cy="100" r="40" fill="url(#t1g)" opacity="0.2"/>
+  <circle cx="150" cy="88" r="16" fill="url(#t1g)" opacity="0.35"/>
+  <ellipse cx="150" cy="165" rx="55" ry="50" fill="url(#t1g)" opacity="0.12"/>
+  <path d="M115 175 Q150 160 185 175" fill="none" stroke="url(#t1g)" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+  <circle cx="138" cy="95" r="3" fill="url(#t1g)" opacity="0.4"/>
+  <circle cx="162" cy="95" r="3" fill="url(#t1g)" opacity="0.4"/>
+</svg>

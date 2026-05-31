@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <defs>
+    <linearGradient id="abg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="ap1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="ap2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="ash">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="500" height="400" rx="20" fill="url(#abg)"/>
+  <circle cx="420" cy="60" r="130" fill="rgba(99,102,241,0.05)"/>
+  <circle cx="80" cy="350" r="100" fill="rgba(251,191,36,0.05)"/>
+  <g transform="translate(80, 60)" filter="url(#ash)">
+    <circle cx="60" cy="50" r="50" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <circle cx="60" cy="50" r="22" fill="url(#ap1)"/>
+    <circle cx="60" cy="50" r="18" fill="white" opacity="0.3"/>
+    <circle cx="60" cy="42" r="6" fill="white"/>
+  </g>
+  <g transform="translate(280, 100)">
+    <circle cx="55" cy="45" r="45" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <circle cx="55" cy="45" r="20" fill="url(#ap2)"/>
+    <circle cx="55" cy="45" r="16" fill="white" opacity="0.3"/>
+    <circle cx="55" cy="38" r="5" fill="white"/>
+  </g>
+  <g transform="translate(150, 200)">
+    <circle cx="50" cy="40" r="40" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <circle cx="50" cy="40" r="18" fill="url(#ap1)" opacity="0.7"/>
+    <circle cx="50" cy="40" r="14" fill="white" opacity="0.3"/>
+    <circle cx="50" cy="34" r="4" fill="white"/>
+  </g>
+  <g transform="translate(320, 230)">
+    <circle cx="40" cy="35" r="35" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <circle cx="40" cy="35" r="16" fill="url(#ap2)" opacity="0.7"/>
+    <circle cx="40" cy="35" r="12" fill="white" opacity="0.3"/>
+    <circle cx="40" cy="29" r="4" fill="white"/>
+  </g>
+  <path d="M140 110 Q200 160 250 200" fill="none" stroke="url(#ap1)" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+  <path d="M335 140 Q320 180 300 230" fill="none" stroke="url(#ap2)" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+  <path d="M200 240 Q240 260 280 230" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,4" opacity="0.3"/>
+  <rect x="180" y="310" width="140" height="50" rx="25" fill="url(#ap1)" opacity="0.1"/>
+  <text x="250" y="342" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="url(#ap1)" text-anchor="middle">Collaborate &amp; Innovate</text>
+</svg>

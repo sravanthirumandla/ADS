@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <linearGradient id="pbg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf2f8"/>
+      <stop offset="100%" stop-color="#fce7f3"/>
+    </linearGradient>
+    <linearGradient id="pg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#pbg5)" rx="12"/>
+  <circle cx="200" cy="100" r="70" fill="white" opacity="0.8"/>
+  <g transform="translate(200, 100)">
+    <rect x="-30" y="-36" width="60" height="72" rx="8" fill="none" stroke="url(#pg5)" stroke-width="3" opacity="0.12"/>
+    <rect x="-24" y="-30" width="48" height="60" rx="6" fill="white" opacity="0.5"/>
+    <rect x="-24" y="-30" width="48" height="12" rx="6" fill="url(#pg5)" opacity="0.15"/>
+    <rect x="-20" y="-14" width="40" height="4" rx="2" fill="url(#pg5)" opacity="0.2"/>
+    <rect x="-20" y="-6" width="30" height="4" rx="2" fill="url(#pg5)" opacity="0.15"/>
+    <rect x="-20" y="2" width="35" height="4" rx="2" fill="url(#pg5)" opacity="0.2"/>
+    <rect x="-20" y="10" width="18" height="4" rx="2" fill="url(#pg5)" opacity="0.15"/>
+    <rect x="-20" y="18" width="38" height="4" rx="2" fill="url(#pg5)" opacity="0.2"/>
+  </g>
+  <text x="200" y="195" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#db2777" text-anchor="middle">Project Management Tools</text>
+</svg>

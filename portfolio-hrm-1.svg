@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <linearGradient id="pbg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="pg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#pbg6)" rx="12"/>
+  <circle cx="200" cy="100" r="70" fill="white" opacity="0.8"/>
+  <g transform="translate(200, 100)">
+    <circle cx="-18" cy="-12" r="18" fill="none" stroke="url(#pg6)" stroke-width="3" opacity="0.15"/>
+    <circle cx="-18" cy="-12" r="7" fill="url(#pg6)" opacity="0.3"/>
+    <circle cx="18" cy="-12" r="18" fill="none" stroke="url(#pg6)" stroke-width="3" opacity="0.15"/>
+    <circle cx="18" cy="-12" r="7" fill="url(#pg6)" opacity="0.3"/>
+    <circle cx="0" cy="18" r="18" fill="none" stroke="url(#pg6)" stroke-width="3" opacity="0.15"/>
+    <circle cx="0" cy="18" r="7" fill="url(#pg6)" opacity="0.3"/>
+    <line x1="-18" y1="-12" x2="18" y2="-12" stroke="url(#pg6)" stroke-width="2" opacity="0.2"/>
+    <line x1="-18" y1="-12" x2="0" y2="18" stroke="url(#pg6)" stroke-width="2" opacity="0.2"/>
+    <line x1="18" y1="-12" x2="0" y2="18" stroke="url(#pg6)" stroke-width="2" opacity="0.2"/>
+  </g>
+  <text x="200" y="195" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#ea580c" text-anchor="middle">HRM Solutions</text>
+</svg>
