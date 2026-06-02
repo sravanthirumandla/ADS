@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" rx="12" fill="#0f172a"/>
+  <rect x="50" y="60" width="200" height="280" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M100 120 L140 200 L160 170 L200 280" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="110" cy="150" r="12" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="180" cy="230" r="8" fill="#10b981" opacity="0.6"/>
+  <rect x="300" y="60" width="80" height="280" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="340" y="210" font-family="system-ui" font-size="40" font-weight="bold" fill="white" text-anchor="middle">A</text>
+  <text x="340" y="260" font-family="system-ui" font-size="40" font-weight="bold" fill="#10b981" text-anchor="middle">B</text>
+  <text x="340" y="310" font-family="system-ui" font-size="40" font-weight="bold" fill="#3b82f6" text-anchor="middle">C</text>
+  <rect x="430" y="60" width="80" height="280" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="470" y="210" font-family="system-ui" font-size="16" fill="white" text-anchor="middle">SVG</text>
+  <text x="470" y="240" font-family="system-ui" font-size="16" fill="#f59e0b" text-anchor="middle">TO</text>
+  <text x="470" y="270" font-family="system-ui" font-size="16" fill="white" text-anchor="middle">FONT</text>
+  <path d="M250 200 L300 200" stroke="#64748b" stroke-width="2" stroke-dasharray="6 4"/>
+  <path d="M380 200 L430 200" stroke="#64748b" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="300" y="370" font-family="system-ui" font-size="14" fill="#94a3b8" text-anchor="middle">Image → SVG → Font</text>
+</svg>

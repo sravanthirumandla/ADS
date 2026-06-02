@@ -1,0 +1,1 @@
+import{n as o,t as f}from"./state-lib-CHuRVz-E.js";var t=o()(f(o=>({config:{familyName:"MyIcons",prefix:"vf",version:"1.0.0",author:"",license:"MIT",description:"",formats:["ttf","otf","woff","woff2","eot"]},updateConfig:f=>o(o=>({config:{...o.config,...f}}))}),{name:"vf-font-store"}));export{t};

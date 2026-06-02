@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="aGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="aArrow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <!-- Subtle tech ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="url(#aGrad)" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.12"/>
+  <!-- Left leg of A -->
+  <path d="M86 42 L26 182" stroke="url(#aGrad)" stroke-width="28" stroke-linecap="round" fill="none"/>
+  <!-- Right leg of A -->
+  <path d="M86 42 L154 182" stroke="url(#aGrad)" stroke-width="28" stroke-linecap="round" fill="none"/>
+  <!-- Growth arrow crossbar -->
+  <path d="M42 136 L128 108" stroke="url(#aArrow)" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <!-- Arrowhead -->
+  <path d="M128 108 L112 92 M128 108 L144 98" stroke="url(#aArrow)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Apex digital node -->
+  <circle cx="86" cy="42" r="6" fill="url(#aArrow)"/>
+  <!-- Innovation dot trail -->
+  <circle cx="76" cy="28" r="2.5" fill="url(#aGrad)" opacity="0.25"/>
+  <circle cx="66" cy="18" r="1.5" fill="url(#aGrad)" opacity="0.12"/>
+</svg>
