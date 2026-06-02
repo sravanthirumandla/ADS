@@ -15,7 +15,7 @@ const MIME = {
 };
 
 const server = http.createServer((req, res) => {
-  const dirs = [__dirname, path.join(__dirname, 'vectorfont-studio')];
+  const dirs = [__dirname, path.join(__dirname, 'vectorfont-studio'), path.join(__dirname, 'vectorstudio')];
   let idx = 0;
 
   function tryServe() {
